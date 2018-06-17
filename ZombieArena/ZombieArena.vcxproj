@@ -18,6 +18,24 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\Bullet.cpp" />
+    <ClCompile Include="code\CreateBackground.cpp" />
+    <ClCompile Include="code\CreateHorde.cpp" />
+    <ClCompile Include="code\Pickup.cpp" />
+    <ClCompile Include="code\Player.cpp" />
+    <ClCompile Include="code\TextureHolder.cpp" />
+    <ClCompile Include="code\Zombie.cpp" />
+    <ClCompile Include="code\ZombieArena.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\Bullet.h" />
+    <ClInclude Include="code\Pickup.h" />
+    <ClInclude Include="code\Player.h" />
+    <ClInclude Include="code\TextureHolder.h" />
+    <ClInclude Include="code\Zombie.h" />
+    <ClInclude Include="code\ZombieArena.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{60fda446-ec65-4f69-b607-a6c1cac16bee}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -146,18 +164,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
